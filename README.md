@@ -23,8 +23,14 @@ It’s a minimal static website to practise HTML/CSS/JS and to showcase my proje
 ├── partials/
 │   ├── header.html
 │   └── footer.html
+├── projects/
+│   ├── one-file.html
+│   ├── for.html
+│   ├── each.html
+│   └── project.html
 └── favicon.png
 
+```
 ---
 
 ## ⚙️ Tech Stack
