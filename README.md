@@ -35,10 +35,10 @@ It’s a minimal static website to practise HTML/CSS/JS and to showcase my proje
 ---
 
 ## ⚙️ Tech Stack
-- :contentReference[oaicite:1]{index=1} / :contentReference[oaicite:2]{index=2} / :contentReference[oaicite:3]{index=3} (vanilla)
+- HTML / CSS / JavaScript (vanilla)
 - Theme system (light/dark mode with local storage)
 - Component-based structure via JS-included partials
-- Hosted via :contentReference[oaicite:4]{index=4}
+- Hosted on a self-managed Linux server (with Strato domain and DynDNS via ddclient)
 
 ---
 
