@@ -8,16 +8,22 @@ It’s a minimal static website to practise HTML/CSS/JS and to showcase my proje
 ---
 
 ## 📂 Structure
-homepage/
-|
-|- index.html # Home page
-|- cv.html # Embedded CV (PDF viewer)
-|- projects.html # Overview of my projects
-|- contact.html # Contact info
-|- imprint.html / privacy.html
-|- assets/ # CSS, JS, icons
-|- partials/ # Shared header/footer HTML
-
+```text
+.
+├── index.html            # Home page
+├── cv.html               # Embedded CV (PDF viewer)
+├── projects.html         # Overview of my projects
+├── contact.html          # Contact info
+├── imprint.html
+├── privacy.html
+├── assets/
+│   ├── css/              # styles.css
+│   ├── js/               # include.js
+│   └── icons/
+├── partials/
+│   ├── header.html
+│   └── footer.html
+└── favicon.png
 
 ---
 
