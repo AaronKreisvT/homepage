@@ -24,7 +24,8 @@ It’s a minimal static website to practise HTML/CSS/JS and to showcase my proje
 │   ├── header.html
 │   └── footer.html
 ├── projects/
-│   ├── one-file.html
+│   ├── one.html
+│   ├── file.html
 │   ├── for.html
 │   ├── each.html
 │   └── project.html
