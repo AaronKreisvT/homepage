@@ -18,19 +18,27 @@
 
     <section class="card" style="margin-bottom:1rem">
       <h1>TableServe</h1>
-      <p>Lightweight web app for table-specific orders with QR codes.</p>
+      <p>Lightweight web app for table-specific orders via QR codes. No payment, just ordering.</p>
     </section>
 
     <section class="card">
       <h2>Overview</h2>
       <ul>
-        <li><strong>Stack:</strong> HTML, CSS, JavaScript, GitHub</li>
-        <li><strong>Status:</strong> Work in progress</li>
+        <li><strong>Stack:</strong> HTML, CSS, JavaScript (vanilla), PHP 8 (Apache + PHP-FPM), CSV files (no DB), QR codes, jsPDF (PDF export)</li>
+        <li><strong>Status:</strong> Finished; iteratively refining styles and content</li>
         <li><strong>Repo:</strong> <a href="https://github.com/AaronKreisvT/tableserve" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
 
       <h2>Notes</h2>
-      <p>Empty website online: <a href="https://www.tableserve.kreisaaron.de" target="_blank" rel="noopener">TableServe</a></p>
+      <ol>
+        <li><strong>Guests:</strong> Scan the QR code at the table ⇒ <code>order.html?code=XXXX</code>. Select drinks, optionally add a comment, then submit the order.</li>
+        <li><strong>Staff/Bar:</strong> Open <a href="/staff.html">/staff.html</a>, log in with the staff key. View open orders, update status (in&nbsp;prep/served/cancelled), print receipts, generate daily PDF reports.</li>
+        <li><strong>Admin:</strong> Open <a href="/admin.html">/admin.html</a> with the admin key. Manage tables (name/code) and menu (items/price/category/active).</li>
+        <li><strong>Data storage:</strong> CSV files in <code>/data</code> (protected from direct access via <code>.htaccess</code>). No database required.</li>
+        <li><strong>Order IDs:</strong> Table code prefix + random suffix (collision-safe).</li>
+        <li><strong>Printing:</strong> Receipts via browser print (80 mm thermal), PDF reports via jsPDF.</li>
+        <li><strong>Setup:</strong> Upload files, adjust <code>config.php</code> (keys/paths), enable PHP-FPM & SSL — done.</li>
+      </ol>
     </section>
   </main>
 
