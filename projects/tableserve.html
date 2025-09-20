@@ -31,9 +31,10 @@
 
       <h2>Notes</h2>
       <ol>
+        <li><strong>Start:</strong> Site currently running at <a href="https://www.tableserve.kreisaaron.de/">tableserve.kreisaaron.de</a>. Codes can be found on GitHub.</li>
         <li><strong>Guests:</strong> Scan the QR code at the table ⇒ <code>order.html?code=XXXX</code>. Select drinks, optionally add a comment, then submit the order.</li>
-        <li><strong>Staff/Bar:</strong> Open <a href="/staff.html">/staff.html</a>, log in with the staff key. View open orders, update status (in&nbsp;prep/served/cancelled), print receipts, generate daily PDF reports.</li>
-        <li><strong>Admin:</strong> Open <a href="/admin.html">/admin.html</a> with the admin key. Manage tables (name/code) and menu (items/price/category/active).</li>
+        <li><strong>Staff/Bar:</strong> Open /staff.html, log in with the staff key. View open orders, update status (in&nbsp;prep/served/cancelled), print receipts, generate daily PDF reports.</li>
+        <li><strong>Admin:</strong> Open /admin.html with the admin key. Manage tables (name/code) and menu (items/price/category/active).</li>
         <li><strong>Data storage:</strong> CSV files in <code>/data</code> (protected from direct access via <code>.htaccess</code>). No database required.</li>
         <li><strong>Order IDs:</strong> Table code prefix + random suffix (collision-safe).</li>
         <li><strong>Printing:</strong> Receipts via browser print (80 mm thermal), PDF reports via jsPDF.</li>
