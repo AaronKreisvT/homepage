@@ -105,8 +105,8 @@ function enableThemeTransitions() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  includePartials();
+document.addEventListener("DOMContentLoaded", async () => {
+  await includePartials(); // <-- wichtig!
   setupMobileMenu();
 });
 
