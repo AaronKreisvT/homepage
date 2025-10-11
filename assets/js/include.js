@@ -105,7 +105,10 @@ function enableThemeTransitions() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", includePartials);
+document.addEventListener("DOMContentLoaded", () => {
+  includePartials();
+  setupMobileMenu();
+});
 
 /* ---------------- MOBILE MENU (Burger) ---------------- */
 function setupMobileMenu() {
@@ -135,4 +138,3 @@ function setupMobileMenu() {
     if (e.key === "Escape") close();
   });
 }
-
