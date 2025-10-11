@@ -1,10 +1,12 @@
 async function includePartials() {
   const nodes = document.querySelectorAll("[data-include]");
-  await Promise.all([...nodes].map(async (el) => {
-    const url = el.getAttribute("data-include");
-    const res = await fetch(url, { cache: "no-cache" });
-    el.outerHTML = await res.text();
-  }));
+  await Promise.all(
+    [...nodes].map(async (el) => {
+      const url = el.getAttribute("data-include");
+      const res = await fetch(url, { cache: "no-cache" });
+      el.outerHTML = await res.text();
+    }),
+  );
 
   // Jahr im Footer
   const y = document.getElementById("year");
@@ -13,7 +15,7 @@ async function includePartials() {
   // Aktive Tabs markieren
   const page = document.body.dataset.page;
   if (page) {
-    document.querySelectorAll(".tabs a").forEach(a => {
+    document.querySelectorAll(".tabs a").forEach((a) => {
       const href = a.getAttribute("href");
       const name = href.replace(".html", "");
       if (name === page) a.classList.add("active");
@@ -61,9 +63,10 @@ function updateThemeButtonIcon() {
   const current = document.documentElement.getAttribute("data-theme");
   // Icon: wenn dark aktiv ⇒ Sonne, sonst Mond
   btn.textContent = current === "dark" ? "☀️" : "🌙";
-  btn.title = current === "dark"
-    ? "Switch to light (long-press for system)"
-    : "Switch to dark (long-press for system)";
+  btn.title =
+    current === "dark"
+      ? "Switch to light (long-press for system)"
+      : "Switch to dark (long-press for system)";
 }
 
 function setupThemeToggle() {
@@ -79,7 +82,7 @@ function setupThemeToggle() {
   btn.addEventListener("mousedown", () => {
     pressTimer = setTimeout(resetToSystem, 600);
   });
-  ["mouseup", "mouseleave"].forEach(ev => {
+  ["mouseup", "mouseleave"].forEach((ev) => {
     btn.addEventListener(ev, () => {
       if (pressTimer) clearTimeout(pressTimer);
     });
@@ -103,3 +106,33 @@ function enableThemeTransitions() {
 }
 
 document.addEventListener("DOMContentLoaded", includePartials);
+
+/* ---------------- MOBILE MENU (Burger) ---------------- */
+function setupMobileMenu() {
+  const btn = document.getElementById("menu-toggle");
+  const nav = document.querySelector("header .nav");
+  const menu = document.getElementById("primary-menu");
+  if (!btn || !nav || !menu) return;
+
+  const close = () => {
+    nav.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = nav.classList.toggle("open");
+    btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  // außerhalb klicken -> schließen
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target)) close();
+  });
+
+  // ESC -> schließen
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+}
+
