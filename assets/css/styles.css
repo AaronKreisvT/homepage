@@ -266,13 +266,11 @@ header {
     box-shadow 0.15s ease,
     border-color 0.15s ease;
 }
-<!--
 .project-card:not([data-status]):hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   border-color: color-mix(in srgb, var(--accent) 35%, transparent);
 }
--->
 .project-card:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
