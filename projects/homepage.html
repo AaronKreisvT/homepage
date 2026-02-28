@@ -1,46 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Homepage — Aaron Kreis</title>
-  <link rel="icon" href="../favicon.png" type="image/png">
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <meta name="description" content="Minimal personal homepage to practise HTML and showcase my work. Self-hosted on a Linux server." />
-</head>
-<body data-page="">
-  <div data-include="../partials/header.html"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homepage — Aaron Kreis</title>
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <meta
+      name="description"
+      content="Minimal personal homepage to practise HTML and showcase my work. Self-hosted on a Linux server."
+    />
+  </head>
+  <body data-page="">
+    <div data-include="../partials/header.html"></div>
 
-  <main class="container">
-    <nav aria-label="Breadcrumb" class="small muted" style="margin-bottom:.6rem">
-      <a href="../projects.html">← Back to Projects</a>
-    </nav>
+    <main class="container">
+      <nav
+        aria-label="Breadcrumb"
+        class="small muted"
+        style="margin-bottom: 0.6rem"
+      >
+        <a href="../projects.html">← Back to Projects</a>
+      </nav>
 
-    <section class="card" style="margin-bottom:1rem">
-      <h1>Homepage</h1>
-      <p>Minimal personal site to practise HTML and showcase my work.</p>
-    </section>
+      <section class="card" style="margin-bottom: 1rem">
+        <h1>Homepage</h1>
+        <p>Minimal personal site to practise HTML and showcase my work.</p>
+      </section>
 
-    <section class="card">
-      <h2>Overview</h2>
-      <ul>
-        <li><strong>Stack:</strong> HTML, CSS (custom), JavaScript (vanilla)</li>
-        <li><strong>Hosting:</strong> Self-managed Linux server (Strato domain, DynDNS via <code>ddclient</code>)</li>
-        <li><strong>Status:</strong> Finished; iteratively refining styles and content</li>
-        <li><strong>Repo:</strong> <a href="https://github.com/AaronKreisvT/homepage" target="_blank" rel="noopener">GitHub</a></li>
-      </ul>
+      <section class="card">
+        <h2>Overview</h2>
+        <ul>
+          <li>
+            <strong>Stack:</strong> HTML, CSS (custom), JavaScript (vanilla)
+          </li>
+          <li>
+            <strong>Hosting:</strong> Self-managed Linux (Apache2) server
+            (Strato domain, DynDNS via <code>ddclient</code>)
+          </li>
+          <li>
+            <strong>Status:</strong> Finished; iteratively refining styles and
+            content
+          </li>
+          <li>
+            <strong>Repo:</strong>
+            <a
+              href="https://github.com/AaronKreisvT/homepage"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+        </ul>
 
-      <h2>Notes</h2>
-      <p>
-        The site is intentionally simple and static. Shared header/footer are included via a small JS helper,
-        links are root-relative to work from subpages, and a theme toggle provides light/dark mode with a smooth transition.
-        The CV page embeds a PDF viewer. Deployment is done from a local repo to the webroot via <code>rsync</code>.
-        Some project pages may be placeholders while I collect ideas.
-      </p>
-    </section>
-  </main>
+        <h2>Notes</h2>
+        <p>
+          The site is intentionally simple and static. Shared header/footer are
+          included via a small JS helper, links are root-relative to work from
+          subpages, and a theme toggle provides light/dark mode with a smooth
+          transition. The CV page embeds a PDF viewer. Deployment is done from a
+          local repo to the webroot via <code>rsync</code>. Some project pages
+          may be placeholders while I collect ideas.
+        </p>
+      </section>
+    </main>
 
-  <div data-include="../partials/footer.html"></div>
-  <script src="../assets/js/include.js"></script>
-</body>
+    <div data-include="../partials/footer.html"></div>
+    <script src="../assets/js/include.js"></script>
+  </body>
 </html>
