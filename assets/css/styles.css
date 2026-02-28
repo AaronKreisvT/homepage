@@ -96,10 +96,12 @@ footer {
   gap: 1rem;
 }
 
-.card {
-  background: var(--panel);
-  padding: 1rem;
-  border-radius: var(--radius);
+.card img {
+  max-width: 96%;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+  border-radius: 12px;
 }
 
 .pdf-actions {
