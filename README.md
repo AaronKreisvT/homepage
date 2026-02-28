@@ -8,6 +8,7 @@ It’s a minimal static website to practise HTML/CSS/JS and to showcase my proje
 ---
 
 ## 📂 Structure
+
 ```text
 .
 ├── index.html            # Home page
@@ -19,6 +20,7 @@ It’s a minimal static website to practise HTML/CSS/JS and to showcase my proje
 ├── assets/
 │   ├── css/              # styles.css
 │   ├── js/               # include.js
+│   ├── pdf.js/           # pdfviewer
 │   └── icons/
 ├── partials/
 │   ├── header.html
@@ -32,21 +34,26 @@ It’s a minimal static website to practise HTML/CSS/JS and to showcase my proje
 └── favicon.png
 
 ```
+
 ---
 
 ## ⚙️ Tech Stack
+
 - HTML / CSS / JavaScript (vanilla)
 - Theme system (light/dark mode with local storage)
+- Automated burger menu for mobile optimization
 - Component-based structure via JS-included partials
-- Hosted on a self-managed Linux server (with Strato domain and DynDNS via ddclient)
+- Hosted on a self-managed Linux (apache2) server (with Strato domain and DynDNS via ddclient)
 
 ---
 
 ## 🚀 Deployment
+
 I develop the site locally and deploy it to my web server at  
 **[www.kreisaaron.de](https://www.kreisaaron.de)**
 
 ---
 
 ## 📜 License
+
 MIT License — see [LICENSE](./LICENSE) for details.
