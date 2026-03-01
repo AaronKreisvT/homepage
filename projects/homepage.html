@@ -6,6 +6,7 @@
     <title>Homepage — Aaron Kreis</title>
     <link rel="icon" href="../favicon.png" type="image/png" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="/assets/js/include.js"></script>
     <meta
       name="description"
       content="Minimal personal homepage to practise HTML and showcase my work. Self-hosted on a Linux server."
@@ -64,8 +65,9 @@
         </p>
       </section>
     </main>
-
-    <div data-include="../partials/footer.html"></div>
-    <script src="../assets/js/include.js"></script>
+    <div id="lightbox" class="lightbox">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+    <div data-include="/partials/footer.html"></div>
   </body>
 </html>
