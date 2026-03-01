@@ -98,6 +98,7 @@ footer {
 
 .card img {
   max-width: 96%;
+  max-height: 75vh;
   height: auto;
   display: block;
   margin: 12px auto;
