@@ -26,116 +26,222 @@
 
       <section class="card" style="margin-bottom: 1rem">
         <h1>Bedienungsanleitung Fotobox</h1>
-        <p> Diese Seite beschreibt die grundlegende Bedienung der Fotobox für Veranstaltungen. Sie ist als praktische Anleitung für Aufbau, Nutzung und Abbau gedacht. </p>
-      </section>
 
-      <section class="card">
-        <h2>Overview</h2>
+        <p>
+          Diese Seite beschreibt die grundlegende Bedienung der Fotobox für
+          Veranstaltungen. Sie ist als praktische Anleitung für Aufbau, Nutzung
+          und Abbau gedacht.
+        </p>
+
+        <h2>Kurzfassung</h2>
+
+        <p>
+          Die Fotobox nimmt Fotos mit einer DSLR-Kamera auf, setzt sie
+          automatisch in eine ausgewählte Vorlage und kann das fertige Bild
+          direkt über den Fotodrucker ausgeben. Sollte der Drucker einmal nicht
+          funktionieren, gehen die Bilder nicht verloren: Sie werden zusätzlich
+          digital auf der Fotobox gespeichert und können nach der Veranstaltung
+          übermittelt werden.
+        </p>
+
+        <h2>Aufbau und Einschalten</h2>
+
+        <p>
+          Der Aufbau ist bewusst einfach gehalten. Für den normalen Betrieb
+          müssen nur wenige Dinge vorbereitet werden:
+        </p>
+
+        <ol>
+          <li>
+            Die vordere Schutzblende bzw. Objektivabdeckung der Kamera
+            entfernen.
+          </li>
+          <li>
+            Das Objektiv der Kamera entsperren und durch Drehen auf die richtige
+            Zoom-Einstellung bringen.
+          </li>
+          <li>Den Drucker anschließen: Stromkabel und USB-Kabel verbinden.</li>
+          <li>Hinten an der Fotobox das Stromkabel anschließen.</li>
+          <li>
+            Kurz warten, bis die Fotobox gestartet ist und das Startmenü auf dem
+            Display erscheint.
+          </li>
+        </ol>
+
+        <p>Danach ist die Fotobox grundsätzlich einsatzbereit.</p>
+
+        <h2>Bedienung während der Veranstaltung</h2>
+
+        <p>
+          Im Startmenü kann ausgewählt werden, ob ein Bild, zwei Bilder oder
+          vier Bilder aufgenommen werden sollen. Nach der Auswahl startet ein
+          Countdown. Danach nimmt die Kamera automatisch die benötigten Fotos
+          auf.
+        </p>
+
+        <p>
+          Nach der Aufnahme wird das finale Bild erzeugt und auf dem Bildschirm
+          angezeigt. Anschließend kann gewählt werden, ob und wie oft das Bild
+          gedruckt werden soll.
+        </p>
+
+        <h2>Tastaturbedienung</h2>
+
+        <p>
+          Zusätzlich zur Bedienung über den Touchscreen können die wichtigsten
+          Funktionen auch über eine Tastatur ausgelöst werden:
+        </p>
+
+        <ul>
+          <li><strong>F5</strong>: Einzelaufnahme starten</li>
+          <li><strong>F6</strong>: Doppelaufnahme starten</li>
+          <li><strong>F7</strong>: Vierfachaufnahme starten</li>
+          <li><strong>F1</strong>: Debug-Anzeige ein- oder ausschalten</li>
+          <li><strong>F2</strong>: Einstellungsmenü öffnen</li>
+        </ul>
+
+        <p>
+          Die Tastaturbedienung ist vor allem hilfreich, wenn der Touchscreen
+          schwer erreichbar ist oder während des Aufbaus Einstellungen geprüft
+          werden sollen.
+        </p>
+
+        <h2>Frames und Layouts</h2>
+
+        <p>
+          Die Fotobox verwendet verschiedene Frames, je nachdem wie viele Fotos
+          aufgenommen werden. Die Fotos werden automatisch in die freien
+          Bildbereiche eingesetzt.
+        </p>
+
+        <h3>Einzelbild-Frame</h3>
+
+        <p>
+          Dieser Frame ist für eine einzelne Aufnahme gedacht. Er eignet sich
+          besonders für klassische Porträts, Paarfotos oder Gruppenbilder, bei
+          denen ein einzelnes großes Bild im Mittelpunkt stehen soll.
+        </p>
+
+        <figure>
+          <img src="single_bg.png" alt="Einzelbild-Frame der Fotobox" />
+          <figcaption>Frame für eine Einzelaufnahme.</figcaption>
+        </figure>
+
+        <h3>Doppelbild-Frame</h3>
+
+        <p>
+          Dieser Frame kombiniert zwei Fotos untereinander. Er eignet sich gut,
+          wenn Gäste zwei unterschiedliche Posen ausprobieren möchten oder wenn
+          ein kleines Mini-Fotostreifen-Gefühl entstehen soll.
+        </p>
+
+        <figure>
+          <img src="double_bg.png" alt="Doppelbild-Frame der Fotobox" />
+          <figcaption>Frame für zwei Aufnahmen.</figcaption>
+        </figure>
+
+        <h3>Vierfachbild-Frame</h3>
+
+        <p>
+          Dieser Frame setzt vier Fotos in ein gemeinsames Layout. Er ist
+          besonders für lustige Serien geeignet, zum Beispiel mit wechselnden
+          Posen, Requisiten oder mehreren Personen.
+        </p>
+
+        <figure>
+          <img src="quadruple_bg.png" alt="Vierfachbild-Frame der Fotobox" />
+          <figcaption>Frame für vier Aufnahmen.</figcaption>
+        </figure>
+
+        <h2>Drucken</h2>
+
+        <p>
+          Nach dem Erzeugen des finalen Bildes kann ausgewählt werden, wie oft
+          es gedruckt werden soll. Die Fotobox sendet den Druckauftrag
+          anschließend automatisch an den angeschlossenen Fotodrucker.
+        </p>
+
+        <p>
+          Falls ein Bild aus irgendeinem Grund nicht gedruckt wird, ist das
+          nicht kritisch: Das fertige Bild wird trotzdem lokal gespeichert. Es
+          kann also nach der Veranstaltung digital gesichert und weitergegeben
+          werden.
+        </p>
+
+        <h2>Typische Probleme</h2>
+
+        <h3>Die Kamera nimmt kein Bild auf</h3>
+
         <ul>
           <li>
-            <strong>Stack:</strong> Python, PyQt6, gphoto2, CUPS, Raspberry Pi, DSLR camera, Touchscreen, Bash
+            Prüfen, ob die Schutzblende bzw. Objektivabdeckung entfernt wurde.
           </li>
-          <li><strong>Status:</strong> Work in Progress.</li>
           <li>
-            <strong>Repo:</strong>
-            <a
-              href="https://github.com/AaronKreisvT/photobooth"
-              target="_blank"
-              rel="noopener"
-              >GitHub</a
-            >
+            Prüfen, ob das Objektiv entsperrt und auf die richtige
+            Zoom-Einstellung gedreht wurde.
+          </li>
+          <li>Prüfen, ob die Kamera eingeschaltet ist.</li>
+          <li>Falls nötig, die Fotobox neu starten.</li>
+        </ul>
+
+        <h3>Der Drucker druckt nicht</h3>
+
+        <ul>
+          <li>Prüfen, ob der Drucker mit Strom versorgt ist.</li>
+          <li>
+            Prüfen, ob das USB-Kabel zwischen Drucker und Fotobox verbunden ist.
+          </li>
+          <li>Prüfen, ob Papier und Farbband korrekt eingelegt sind.</li>
+          <li>
+            Falls der Drucker trotzdem nicht reagiert, Fotobox und Drucker neu
+            starten.
           </li>
         </ul>
 
-        <h2>Notes</h2>
         <p>
-          As a physics student with a strong interest in DIY electronics, software and practical tinkering, I built this photo booth as an alternative to commercial rental systems.
+          Wichtig: Auch wenn der Druck nicht funktioniert, bleiben die Bilder
+          digital gespeichert.
         </p>
-        <p>
-	  The system is built around a custom wooden enclosure, a Raspberry Pi, a touchscreen, a DSLR camera connected via USB, and an external DNP photo printer. Guests can use the touchscreen to take one, two or four pictures. The software then combines the photos with a selected template and sends the final image directly to the printer.
-	  <br />
-	  The current version runs entirely on the photo booth itself. Image capture, template composition, preview, print selection and printer statistics are handled locally on the Raspberry Pi.
-	  <br />
-	  The software supports:
-	  <ul>
-	    <li>DSLR control via gphoto2</li>
-	    <li>a fullscreen touchscreen kiosk interface</li>
-	    <li>configurable templates for 1, 2 or 4 photos</li>
-	    <li>custom text fields for event names and dates</li>
-	    <li>local photo storage</li>
-	    <li>direct printing via CUPS</li>
-	    <li>basic print statistics</li>
-	    <li>keyboard shortcuts for setup and maintenance</li>
-	  </ul>
-	  The project has already been used at private events and weddings. It is still actively developed, but it has reached a stage where it is practically usable and can be adapted for different events by changing templates and settings.
-        </p>
-	<h2>Outlook</h2>
-	<p>
-	  A future version could add optional network features such as live synchronization, a guest upload page, QR-code based sharing or a web gallery. Earlier prototypes experimented with server-side components, but for now the project focuses on a robust local client-side setup because that is simpler, easier to maintain, and more reliable during events.
-	</p>
-        <h2>To Do</h2>
+
+        <h3>Der Touchscreen reagiert nicht richtig</h3>
+
+        <ul>
+          <li>
+            Falls vorhanden, eine Tastatur anschließen und die Funktionstasten
+            verwenden.
+          </li>
+          <li>
+            Mit <strong>F1</strong> kann die Debug-Anzeige eingeschaltet werden.
+          </li>
+          <li>
+            Falls nötig, die Software oder die gesamte Fotobox neu starten.
+          </li>
+        </ul>
+
+        <h2>Abbau</h2>
+
+        <p>Der Abbau erfolgt einfach in umgekehrter Reihenfolge:</p>
+
         <ol>
-	  <li>Improve robustness of camera capture after live preview.</li>
-	  <li>Add optional synchronization or web gallery features later.</li>
-          <li>Build a new enclosure and remove unused legacy hardware.</li>
+          <li>Fotobox herunterfahren oder ausschalten.</li>
+          <li>Hinten das Stromkabel der Fotobox entfernen.</li>
+          <li>USB- und Stromkabel des Druckers entfernen.</li>
+          <li>Die Schutzblende bzw. Objektivabdeckung wieder aufsetzen.</li>
+          <li>Die Kamera und das Objektiv für den Transport sichern.</li>
         </ol>
-        <h2>Images</h2>
-        <h3>Front View</h3>
+
+        <h2>Nach der Veranstaltung</h2>
+
         <p>
-          This is the front view of the photo booth. It features a custom-built
-          wooden enclosure with a camera (Nikon D5600) opening and a 10.1"
-          Waveshare LCD touchscreen display. An LED strip with an integrated
-          diffuser is mounted around the front and was originally used as a
-          flash. However, since the light was coming directly from the front, it
-          was reflected in eyeglass lenses, making the LED strips and their
-          geometric pattern clearly visible in the photos. <br />
-          To solve this issue, I added a ring light on top of the box, which now
-          provides static illumination and results in much more natural
-          reflections. <br />
-          The booth is mounted on a tripod with independently adjustable legs,
-          allowing the height and tilt to be adjusted easily. Internally, the
-          entire assembly is secured with a wing screw to ensure stable support.
-          <br />
-          <img src="photobooth/fotobox-front.jpg" alt="fotobox-front" />
+          Nach der Veranstaltung sollten die gespeicherten Bilder gesichert
+          werden. Außerdem kann die Druckstatistik ausgewertet werden, um zu
+          sehen, wie viele Bilder aufgenommen und gedruckt wurden.
         </p>
-        <h3>Side View</h3>
+
         <p>
-          At the rear, there is a standard IEC power connector that supplies the
-          photo booth with electricity. <br />
-
-          On the side, a hinged door is integrated into the housing and secured
-          with a simple lock, allowing easy access for maintenance and
-          adjustments. <br />
-          <img src="photobooth/fotobox-side.jpg" alt="fotobox-side" />
-        </p>
-        <h3>Inside View</h3>
-        <p>
-          The IEC power connector at the rear is connected to a six-outlet power
-          strip inside the enclosure. The camera is powered directly from this
-          strip, as battery operation would not be suitable for continuous use.
-          <br />
-
-          A 65W power adapter is also connected to the power strip. It supplies
-          both the ring light (which can draw up to 10W) and the Raspberry Pi 4
-          B+. <br />
-
-          The Raspberry Pi is connected to the camera via USB. It is also
-          connected to the display via GPIO and HDMI, with the display receiving
-          its power directly through the GPIO connection from the Raspberry Pi.
-          <br />
-
-          Additionally, the Raspberry Pi is connected via a gray USB cable to a
-          DNP DS620 printer, which is provided separately and can also be
-          powered through the internal power strip. <br />
-
-          For easier maintenance and debugging, a USB extension cable is
-          installed inside the enclosure. This allows a keyboard to be connected
-          externally without having to reach awkwardly into the box. <br />
-
-          On the right side, you can see the end of the LED strip. It was
-          previously connected to a USB relay and used as a flash, but this
-          setup is no longer in use. <br />
-          <img src="photobooth/fotobox-inside.jpg" alt="fotobox-inside" />
+          Erst wenn die Bilder erfolgreich gesichert wurden, sollten alte
+          Aufnahmen für die nächste Veranstaltung gelöscht oder zurückgesetzt
+          werden.
         </p>
       </section>
     </main>
