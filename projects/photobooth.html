@@ -27,8 +27,7 @@
       <section class="card" style="margin-bottom: 1rem">
         <h1>Photobooth</h1>
         <p>
-          Privacy-friendly DSLR photobooth with tokenized QR links and a kiosk
-          UI, built on Raspberry Pi.
+          A self-built DSLR photo booth based on a Raspberry Pi, touchscreen, Python GUI and a DNP photo printer.
         </p>
       </section>
 
@@ -36,8 +35,7 @@
         <h2>Overview</h2>
         <ul>
           <li>
-            <strong>Stack:</strong> Python, Tkinter, Pillow, qrcode, subprocess,
-            OpenSSH, Bash, gphoto2, Raspberry Pi, HTML, CSS
+            <strong>Stack:</strong> Python, PyQt6, gphoto2, CUPS, Raspberry Pi, DSLR camera, Touchscreen, Bash
           </li>
           <li><strong>Status:</strong> Work in Progress.</li>
           <li>
@@ -53,38 +51,35 @@
 
         <h2>Notes</h2>
         <p>
-          As a broke physics student with a love for DIY and tinkering, I
-          couldn't justify spending hundreds of euros on a commercial photo
-          booth for parties and events. So, I built my own — using the tools and
-          knowledge I already had.
+          As a physics student with a strong interest in DIY electronics, software and practical tinkering, I built this photo booth as an alternative to commercial rental systems.
         </p>
         <p>
-          This project is a <strong>self-made photo booth</strong>, built around
-          a wooden frame, a Raspberry Pi with a touchscreen, and a Nikon DSLR
-          camera connected via USB. The result is a compact, reliable, and fun
-          little system that lets guests take high-quality photos with a single
-          tap — and instantly get their picture via a personal QR code.
+	  The system is built around a custom wooden enclosure, a Raspberry Pi, a touchscreen, a DSLR camera connected via USB, and an external DNP photo printer. Guests can use the touchscreen to take one, two or four pictures. The software then combines the photos with a selected template and sends the final image directly to the printer.
+	  <br />
+	  The current version runs entirely on the photo booth itself. Image capture, template composition, preview, print selection and printer statistics are handled locally on the Raspberry Pi.
+	  <br />
+	  The software supports:
+	  <ul>
+	    <li>DSLR control via gphoto2</li>
+	    <li>a fullscreen touchscreen kiosk interface</li>
+	    <li>configurable templates for 1, 2 or 4 photos</li>
+	    <li>custom text fields for event names and dates</li>
+	    <li>local photo storage</li>
+	    <li>direct printing via CUPS</li>
+	    <li>basic print statistics</li>
+	    <li>keyboard shortcuts for setup and maintenance</li>
+	  </ul>
+	  The project has already been used at private events and weddings. It is still actively developed, but it has reached a stage where it is practically usable and can be adapted for different events by changing templates and settings.
         </p>
-        <p>The software is kept intentionally lightweight and modular:</p>
-        <ul>
-          <li>
-            The <strong>client side</strong> (running on the Raspberry Pi)
-            handles image capture, display, and upload.
-          </li>
-          <li>
-            The <strong>server side</strong> hosts a simple website where guests
-            can retrieve their photos by scanning the QR code.
-          </li>
-        </ul>
-        <p>
-          No accounts, no cloud services, no ads — just local hardware, open
-          protocols, and full control.<br />
-          The booth has already been used at birthdays, graduation parties, and
-          student events — and it's always a hit.
-        </p>
+	<h2>Outlook</h2>
+	<p>
+	  A future version could add optional network features such as live synchronization, a guest upload page, QR-code based sharing or a web gallery. Earlier prototypes experimented with server-side components, but for now the project focuses on a robust local client-side setup because that is simpler, easier to maintain, and more reliable during events.
+	</p>
         <h2>To Do</h2>
         <ol>
-          <li>Build a new enclosure (remove the LED strip).</li>
+	  <li>Improve robustness of camera capture after live preview.</li>
+	  <li>Add optional synchronization or web gallery features later.</li>
+          <li>Build a new enclosure and remove unused legacy hardware.</li>
         </ol>
         <h2>Images</h2>
         <h3>Front View</h3>
